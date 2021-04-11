@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="{LANGUAGE}" dir="ltr" class="smooth">
+
+<head>
+  <meta charset=utf-8>
+  <meta name=viewport content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="{WEBURL}favicon.ico">
+  <title>{TITLE}</title>
+  <link rel=stylesheet href="index.php/css/view/index">
+  <script src="index.php/js/view/index/{LANGUAGE}"></script>
+</head>
+
+<body class="responsive {BODYCLASS} wide" style="background-image:url({BGIMAGE})">
+  <div id=slidemenu_content>
+    <div class="wrapper" id="scroll_to">
+      <header class="header bg_header clear">
+        <div class=top_header>
+          <div class=gcss-wrapper>
+            <div class="table fullwidth collapse">
+              <div class=td>{WEBDESCRIPTION}</div>
+              <div class="td right">
+                <div class="language-menu" data-text="{LANGUAGE}">
+                  <ul>{LANGUAGES}</ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 class="center logo clear"><a href="{WEBURL}">{LOGO}</a></h2>
+        <div class="menu_bg clear fixed_top" id="toTop">
+          <nav id=topmenu class="slidemenu topmenu center">
+            <ul>
+              <li><a href="#home"><span>Home</span></a></li>
+              <li><a href="#product"><span>Product</span></a></li>
+              <li><a href="#news"><span>News</span></a></li>
+              <li><a href="#about"><span>About</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="bg_color gcss-wrapper">
+        <div id="toTop">
+          <div id="skip" class="clear">
+            <main id="content">{MAIN}</main>
+          </div>
+        </div>
+      </div>
+      <footer class="footer center">
+        <div class=gcss-wrapper>
+          <p class=copy>
+            copyright 2020, <a href="{WEBURL}" target="_blank">{WEBDESCRIPTION}</a> {LNG_Version} {VERSION}
+            created by <a href="https://www.kotchasan.com" target=_blank rel=noreferrer>Kotchasan</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <a href=#scroll-to class=scroller title="{LNG_scroll to top}">^</a>
+  <script>
+    $G(window).Ready(function() {
+      initWeb();
+    });
+  </script>
+</body>
+
+</html>
